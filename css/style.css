@@ -64,6 +64,7 @@ height: 40vh;
     grid-template-rows: 150px; 
     grid-column-gap: 10px;
     grid-row-gap: 15px;
+    flex-direction:row;
     justify-items: stretch;
     justify-content: center;
     align-items: center;
@@ -81,9 +82,31 @@ height: 40vh;
 /* Fin de bar nav */
 
 /* Responsive */
-/* responsive screen 1024 width */
+/* @media screen and (min-width: 1440px){
+    .barnav{
+        display: grid !important;
+        height: 80vh;
+        grid-template-columns: 480px 480px 480px;
+        grid-template-rows: 150px; 
+        justify-content: center;
+        width: 100%;
+        list-style-type:none;
+    }
+    .barnav ul{
+        margin-top: 300px;
+    }
+    .btn-home{
+        background-image: url(../images/btn01.png);
+        height: 150px;
+        border-radius: 5px;
+        margin-left: -35px;
+    }
+
+} */
+
 @media screen and (max-width: 1024px){
     .barnav{
+        display: grid !important;
         height: 80vh;
         grid-template-columns: 550px;
         grid-template-rows: 150px 150px 150px; 
@@ -103,9 +126,11 @@ height: 40vh;
 
 }
 
+
 /* responsive screen 768 width */
 @media screen and (max-width: 768px){
     .barnav{
+        display: grid !important;
         height: 80vh;
         grid-template-columns: 550px;
         grid-template-rows: 150px 150px 150px; 
@@ -128,6 +153,7 @@ height: 40vh;
 /* responsive screen 425 width */
 @media screen and (max-width: 425px){
     .barnav{
+        display: grid !important;
         height: 80vh;
         grid-template-columns: 425px;
         grid-template-rows: 150px 150px 150px; 
@@ -148,6 +174,7 @@ height: 40vh;
 /* responsive screen 375 width */
 @media screen and (max-width: 375px){
     .barnav{
+        display: grid !important;
         height: 80vh;
         grid-template-columns: 375px;
         grid-template-rows: 150px 150px 150px; 
@@ -168,6 +195,7 @@ height: 40vh;
 /* responsive screen 320 width */
 @media screen and (max-width: 320px){
     .barnav{
+        display: grid !important;
         height: 80vh;
         grid-template-columns: 320px;
         grid-template-rows: 150px 150px 150px; 
