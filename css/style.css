@@ -79,7 +79,8 @@ height: 20vh;
     height: 150px;
     float:top !important;
     top: -150px !important;
-    background-color: rgba(255,255,255,0.5) !important;
+    background-color: rgba(255,255,255,0.9) !important;
+    border-right: 3px solid black;
 }
 .item-yellow:hover{
     background-color: rgba(237, 215, 0);
@@ -221,7 +222,7 @@ height: 20vh;
 }
 
 /* responsive screen 375 width */
-@media screen and (max-width: 375px){
+@media screen and (min-width: 360px && max-width: 375px){
     .barnav{
         display: grid !important;
         height: 80vh;
