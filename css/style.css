@@ -274,7 +274,7 @@ height: 20vh;
 @media screen and (max-width: 320px){
     .barnav{
         display: grid !important;
-        height: 80vh;
+        height: 90vh;
         grid-template-columns: 320px;
         grid-template-rows: 150px 150px 150px; 
         justify-content: center;
