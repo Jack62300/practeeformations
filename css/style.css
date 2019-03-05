@@ -8,6 +8,8 @@
 body{
     background-color:#fff;
     color: black; 
+    margin:0;
+    overflow-x: hidden;
 }
 /* HEADER */
 .top{
@@ -103,6 +105,25 @@ height: 40vh;
     }
 
 } */
+@media screen and (max-width: 1200px){
+    .barnav{
+        display: grid !important;
+        height: 80vh;
+        grid-template-columns: 550px;
+        grid-template-rows: 150px 150px 150px; 
+        justify-content: center;
+        width: 100%;
+        list-style-type:none;
+    }
+    
+    .btn-home{
+        background-image: url(../images/btn01.png);
+        height: 150px;
+        border-radius: 5px;
+        margin-left: -35px;
+    }
+
+}
 
 @media screen and (max-width: 1024px){
     .barnav{
@@ -151,7 +172,7 @@ height: 40vh;
 }
 
 /* responsive screen 425 width */
-@media screen and (max-width: 425px){
+@media screen and (min-width : 400px && max-width: 425px){
     .barnav{
         display: grid !important;
         height: 80vh;
