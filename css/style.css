@@ -1,0 +1,188 @@
+/* Legende du style
+1 - HEADER
+2 - Bar Navigation top
+
+
+4 - responsive
+*/
+body{
+    background-color:#fff;
+    color: black; 
+}
+/* HEADER */
+.top{
+    background-color: #434543;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    max-width: 100px;
+    max-height:100px;
+}
+.barsection{
+    width: 100%;
+    height: 5px;
+    background-color: #FC7F3C;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+hr{
+    margin:0;
+    padding:0;
+}
+
+
+/* Fin Header */ 
+
+/* BAR NAV */
+.barnav{
+
+background-color: rgba(0, 0, 0, 0.3);
+color: black;
+width: 100%;
+height: 40vh;
+}
+.button {
+    border:solid 2px black;
+    align-self: start;
+    display:grid;
+}
+.btn-home{
+    margin-top: 5px;
+    background-image: url(../images/btn01.png);
+    height: 150px;
+    border-radius: 5px;
+    list-style-type: none;
+}
+.barnav{
+    display: grid !important;
+    grid-template-columns: 550px 550px 550px;
+    grid-template-rows: 150px; 
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    justify-items: stretch;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    }
+.dropdown-menu{
+    width: 100%;
+    float:top !important;
+    top: -150px !important;
+}
+.barnav ul li{
+    list-style-type: none;
+}
+
+/* Fin de bar nav */
+
+/* Responsive */
+/* responsive screen 1024 width */
+@media screen and (max-width: 1024px){
+    .barnav{
+        height: 80vh;
+        grid-template-columns: 550px;
+        grid-template-rows: 150px 150px 150px; 
+        justify-content: center;
+        width: 100%;
+        list-style-type:none;
+    }
+    .barnav ul{
+        margin-top: 300px;
+    }
+    .btn-home{
+        background-image: url(../images/btn01.png);
+        height: 150px;
+        border-radius: 5px;
+        margin-left: -35px;
+    }
+
+}
+
+/* responsive screen 768 width */
+@media screen and (max-width: 768px){
+    .barnav{
+        height: 80vh;
+        grid-template-columns: 550px;
+        grid-template-rows: 150px 150px 150px; 
+        justify-content: center;
+        width: 100%;
+        list-style-type:none;
+    }
+    .barnav ul{
+        margin-top: 300px;
+    }
+    .btn-home{
+        background-image: url(../images/btn01.png);
+        height: 150px;
+        border-radius: 5px;
+        margin-left: -35px;
+    }
+
+}
+
+/* responsive screen 425 width */
+@media screen and (max-width: 425px){
+    .barnav{
+        height: 80vh;
+        grid-template-columns: 425px;
+        grid-template-rows: 150px 150px 150px; 
+        justify-content: center;
+        width: 100%;
+        list-style-type:none;
+    }
+    .btn-home{
+        margin-top: 5px;
+        background-image: url(../images/425.png);
+        height: 150px;
+        border-radius: 5px;
+        margin-left: -35px;
+    }
+
+}
+
+/* responsive screen 375 width */
+@media screen and (max-width: 375px){
+    .barnav{
+        height: 80vh;
+        grid-template-columns: 375px;
+        grid-template-rows: 150px 150px 150px; 
+        justify-content: center;
+        width: 100%;
+        list-style-type:none;
+    }
+    .btn-home{
+        margin-top: 5px;
+        background-image: url(../images/375.png);
+        height: 150px;
+        border-radius: 5px;
+        margin-left: -35px;
+    }
+
+}
+
+/* responsive screen 320 width */
+@media screen and (max-width: 320px){
+    .barnav{
+        height: 80vh;
+        grid-template-columns: 320px;
+        grid-template-rows: 150px 150px 150px; 
+        justify-content: center;
+        list-style-type:none;
+    }
+    .btn-home{
+        margin-top: 5px;
+        background-image: url(../images/320.png);
+        height: 150px;
+        border-radius: 5px;
+        margin-left: -35px;
+    }
+
+}
+
+
+
