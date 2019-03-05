@@ -127,9 +127,7 @@ height: 20vh;
         grid-template-columns: 550px;
         grid-template-rows: 150px 150px 150px;
         grid-column-gap: 10px;
-        grid-row-gap: 15px;
-        justify-items: stretch;
-        justify-content: center; 
+        grid-row-gap: 15px; 
         justify-content: center;
         width: 100%;
         list-style-type:none;
@@ -250,9 +248,10 @@ height: 20vh;
     .barnav{
         display: grid !important;
         height: 80vh;
-        grid-template-columns: 360px;
+        grid-template-columns: 369px;
         grid-template-rows: 150px 150px 150px; 
         justify-content: center;
+        justify-items: stretch;
         width: 100%;
         list-style-type:none;
     }
@@ -260,12 +259,9 @@ height: 20vh;
         margin-top:5vh;
     }
     .btn-home{
-        margin-top: 5px;
-        background-image: url(../images/320.png);
-        background-repeat: no-repeat;
-        height: 150px;
         border-radius: 5px;
-        margin-left: -35px;
+        margin-left: 2px;
+        background-image: url(../images/320.png);
     }
 
 }
