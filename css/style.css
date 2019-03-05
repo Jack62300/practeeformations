@@ -133,7 +133,9 @@ height: 20vh;
         width: 100%;
         list-style-type:none;
     }
-    
+    .btnperso{
+        margin-top: 83vw;
+    }
     .btn-home{
         background-image: url(../images/btn01.png);
         background-repeat: no-repeat;
