@@ -66,7 +66,6 @@ height: 40vh;
     grid-template-rows: 150px; 
     grid-column-gap: 10px;
     grid-row-gap: 15px;
-    flex-direction:row;
     justify-items: stretch;
     justify-content: center;
     align-items: center;
@@ -110,7 +109,11 @@ height: 40vh;
         display: grid !important;
         height: 80vh;
         grid-template-columns: 550px;
-        grid-template-rows: 150px 150px 150px; 
+        grid-template-rows: 150px 150px 150px;
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+        justify-items: stretch;
+        justify-content: center; 
         justify-content: center;
         width: 100%;
         list-style-type:none;
@@ -188,6 +191,10 @@ height: 40vh;
         height: 150px;
         border-radius: 5px;
         margin-left: -35px;
+    }
+    .dropup{
+        margin-left: 15px;
+        padding: 5px;
     }
 
 }
