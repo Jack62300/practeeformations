@@ -16,282 +16,124 @@ body{
     padding-right: 0;
     padding-left:0;
 }
-/* HEADER */
-.top{
-    background-color: #434543;
-    color:white;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+/*header*/
+.btn-group{
+    display:initial !important;
+}
+.dropdown-menu{
     width:100%;
+    height: 120px;
+    text-align:center;
+}
+.navbar-light{
+background-color: #333 !important;
+}
+.nav-link{
+    color:white !important;
 }
 .logo{
-    max-width: 100px;
-    max-height:100px;
+    max-width:5em;
+    max-height: 2em;
 }
-.barsection{
-    width: 100%;
-    height: 5px;
-    background-color: #FC7F3C;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
+/* Fin du Header */ 
 
-hr{
+/* navbar personnaliser */
+.bordernav{
+    background-color:orangered;
+    width:100%;
+    height:5px;
     margin:0;
     padding:0;
 }
-
-
-/* Fin Header */ 
-
-/* BAR NAV */
-.barnav{
-
-/* background-color: rgba(0, 0, 0, 0.3); */
-color: black;
-width: 100%;
-background-color:rgba(114, 183, 88);
-height: 20vh;
-}
-.button {
-    border:solid 2px black;
-    align-self: start;
-    display:grid;
-}
-.btn-home{
-
-    margin-left: 25px;
-    background-image: url(../images/btn01.png);
-    background-repeat: no-repeat !important;
-    height: 150px;
-    border-radius: 5px;
-    list-style-type: none;
-}
-.barnav{
-    display: flex !important;
-    /* grid-template-columns: 540px 540px 540px;
-    grid-template-rows: 150px;  */
-    /* grid-column-gap: 10px;
-    grid-row-gap: 15px; */
-    flex-direction: row;
+.navbar-perso{
+    display: flex;
     align-items: center;
     justify-content: center;
-    }
-.dropdown-menu{
-    width: 400px;
-    margin-top:0;
-    height: 150px;
-    float:top !important;
-    top: -150px !important;
-    background-color: rgba(255,255,255,0.9) !important;
-    border-right: 3px solid black;
+    margin-top: 0.5px;
 }
-.item-yellow:hover{
-    background-color: rgba(237, 215, 0);
+.card{
+   border:none; 
+   text-align:center;
+   background-color: none !important;
+   padding: 5px;
+   margin: 5px;
+   border-radius:0;
 }
-.item-green:hover{
-    background-color: rgba(100, 212, 84);
+.card{
+    overflow:hidden;
 }
-.item-orange:hover{
-    background-color: rgba(229, 118, 7);
+.card-body{
+    padding:0;
 }
-.barnav ul li{
-    list-style-type: none;
+.card-body1{
+   
+    padding:0;
+    background-image: url(../images/btn01.png);
+    background-repeat: no-repeat;
+    height:150px;
 }
-
-/* Fin de bar nav */
-@media screen and (max-width: 1440px){
-    .barnav{
-        display:flex;
-        align-items: initial;
-        justify-content: baseline;
-        width:100%;
-    }
-    .btn-home{
-        margin-top: 5px;
-        background-image: url(../images/320.png);
-        border-radius: 5px;
-        margin-left: 8px;
-    }
-    .top{
-        width:100%;
-    }
-
-} 
-@media screen and (max-width: 1800px){
-    .barnav{
-        display:flex;
-        align-items: initial;
-        justify-content: baseline;
-        
-    }
-    .btn-home{
-        margin-top: 5px;
-        background-image: url(../images/320.png);
-        border-radius: 5px;
-        margin-left: 8px;
-    }
-    .top{
-        width:100%;
-    }
-
+.card-body2{
+    
+    padding:0;
+    height:150px;
+    background-image: url(../images/btn02.png);
+    background-repeat: no-repeat;
 }
-
-@media screen and (max-width: 1024px){
-    .barnav{
-        display:flex;
-        align-items: initial;
-        justify-content: baseline;
-        
-    }
-    .btn-home{
-        margin-top: 5px;
-        background-image: url(../images/320.png);
-        border-radius: 5px;
-        margin-left: 8px;
-    }
-    .top{
-        width:100%;
-    }
-
+.card-body3{
+    
+    padding:0;
+    height:150px;
+    background-image: url(../images/btn03.png);
+    background-repeat: no-repeat;
 }
-
-
-/* responsive screen 768 width */
-@media screen and (max-width: 768px){
-    .barnav{
-        display:flex;
-        align-items: initial;
-        justify-content: baseline;
-       
-    }
-    .btn-home{
-        margin-top: 5px;
-        background-image: url(../images/320.png);
-        border-radius: 5px;
-        margin-left: 8px;
-    }
-    .top{
-        width:100%;
-    }
-
+.btnperso1{
+    background-color:#F0BB08;
+    color:black;
+    border-radius:0;
+    border:0;
+    border-top: solid 1px black;
+    margin-top: 7.5em;
+    width: 100%;
 }
-
-/* responsive screen 425 width */
-@media screen (max-width: 425px){
-    .barnav{
-        display:flex;
-        align-items: initial;
-        justify-content: baseline;
-       
-    }
-    .btn-home{
-        margin-top: 5px;
-        background-image: url(../images/320.png);
-        border-radius: 5px;
-        margin-left: 8px;
-    }
-    .top{
-        width:100%;
-    }
-
+.btnperso2{
+    background-color:#639143;
+    color:black;
+    border-radius:0;
+    border:0;
+    border-top: solid 1px black;
+    margin-top: 7.5em;
+    width: 100%;
 }
-
-/* responsive screen 380 width */
-@media screen and(min-width:380px){
-    .btn-home{
-        margin-top: 5em;
-    }
-    .top{
-        width:100%;
-    }
-} 
-
-/* responsive screen 375 width */
-@media screen and (max-width: 375px){
-    .barnav{
-        display:flex;
-        align-items: initial;
-        justify-content: baseline;
+.btnperso3{
+    background-color:#639143;
+    color:black;
+    border-radius:0;
+    border:0;
+    border-top: solid 1px black;
+    margin-top: 7.5em;
+    width: 100%;
+}
+.btnperso1:hover{
+    background-color:#639143;
+    color:black;
+}
+.btnperso2:hover{
+    background-color:#F0BB08;
+    color:black;
+}
+@media (min-width:200px) and (max-width:768px){
+    .navbar-perso{
         flex-direction:column;
-        height:100%;
-        padding: 10px;
-        
-    }
-    .btn-home{
-        margin-top: 5px;
-        background-image: url(../images/320.png);
-        border-radius: 5px;
-        margin-left: 8px;
-    }
-    .top{
-        width:100%;
-    }
 
+    }   
+    .card-body{
+        width:auto;
+    }
 }
-
-@media screen and (max-width: 360px){
-    .barnav{
-        display:flex;
-        align-items: initial;
-        justify-content: baseline;
-        flex-direction:column;
-        
+@media (min-width:1700px){
+    .card-body{
+        width: 550px;
     }
-    .btn-home{
-        margin-top: 5px;
-        background-image: url(../images/320.png);
-        border-radius: 5px;
-        margin-left: 8px;
-    }
-    .top{
-        width:100%;
-    }
-
-}
-
-/* responsive screen 320 width */
-@media screen and (min-width: 320px){
-    .barnav{
-        flex-direction:column;
-       
-    }
-    .btn-home{
-        position:relative;
-        margin-top: 5px;
-        background-image: url(../images/320.png);
-        
-        border-radius: 5px;
-        margin-left: 0px;
-    }
-    .btn-home2{
-        position:relative;
-        margin-top: 5px;
-        background-image: url(../images/320.png);
-        
-        border-radius: 5px;
-        margin-left: 0px;
-    }
-    .btn-home3{
-        position:relative;
-        margin-top: 5px;
-        background-image: url(../images/320.png);
-        
-        border-radius: 5px;
-        margin-left: 0px;
-    }
-    .top{
-        width:100%;
-    }
-    .dropdown-menu{
-        position:absolute;
-        width: 300px;
-        border: solid 2px orangered;
-    }
-
-
 }
 
 
