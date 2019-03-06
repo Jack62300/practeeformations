@@ -103,70 +103,56 @@ height: 20vh;
 /* Fin de bar nav */
 @media screen and (max-width: 1440px){
     .barnav{
-        display: grid !important;
-        height: 80vh;
-        grid-template-columns: 480px 480px 480px;
-        grid-template-rows: 150px; 
-        justify-content: center;
-        width: 100%;
-        list-style-type:none;
+        display:flex;
+        align-items: initial;
+        justify-content: baseline;
+        width:100%;
     }
-    .btnperso{
-        margin-top: -83vw;
-    }
-    
     .btn-home{
-        background-image: url(../images/btn01.png);
-        height: 150px;
+        margin-top: 5px;
+        background-image: url(../images/320.png);
         border-radius: 5px;
-        margin-left: -35px;
+        margin-left: 8px;
+    }
+    .top{
+        width:100%;
     }
 
 } 
 @media screen and (max-width: 1800px){
     .barnav{
-        display: grid !important;
-        height: 80vh;
-        grid-template-columns: 550px;
-        grid-template-rows: 150px 150px 150px;
-        grid-column-gap: 10px;
-        grid-row-gap: 15px; 
-        justify-content: center;
-        width: 100%;
-        list-style-type:none;
-    }
-    .btnperso{
-        margin-top: 3vw;
+        display:flex;
+        align-items: initial;
+        justify-content: baseline;
+        
     }
     .btn-home{
-        background-image: url(../images/btn01.png);
-        background-repeat: no-repeat;
-        height: 150px;
+        margin-top: 5px;
+        background-image: url(../images/320.png);
         border-radius: 5px;
-        margin-left: 35px;
+        margin-left: 8px;
+    }
+    .top{
+        width:100%;
     }
 
 }
 
 @media screen and (max-width: 1024px){
     .barnav{
-        display: grid !important;
-        height: 80vh;
-        grid-template-columns: 550px;
-        grid-template-rows: 150px 150px 150px; 
-        justify-content: center;
-        width: 100%;
-        list-style-type:none;
-    }
-    .btnperso{
-        margin-top: -550px;
+        display:flex;
+        align-items: initial;
+        justify-content: baseline;
+        
     }
     .btn-home{
-        background-image: url(../images/btn01.png);
-        background-repeat: no-repeat;
-        height: 150px;
+        margin-top: 5px;
+        background-image: url(../images/320.png);
         border-radius: 5px;
-        margin-left: -35px;
+        margin-left: 8px;
+    }
+    .top{
+        width:100%;
     }
 
 }
@@ -175,103 +161,92 @@ height: 20vh;
 /* responsive screen 768 width */
 @media screen and (max-width: 768px){
     .barnav{
-        display: grid !important;
-        height: 80vh;
-        grid-template-columns: 550px;
-        grid-template-rows: 150px 150px 150px; 
-        justify-content: center;
-        width: 100%;
-        list-style-type:none;
-    }
-    .btnperso{
-        margin-top: -590px;
+        display:flex;
+        align-items: initial;
+        justify-content: baseline;
+       
     }
     .btn-home{
-        background-image: url(../images/btn01.png);
-        background-repeat: no-repeat;
-        height: 150px;
+        margin-top: 5px;
+        background-image: url(../images/320.png);
         border-radius: 5px;
-        margin-left: -35px;
+        margin-left: 8px;
+    }
+    .top{
+        width:100%;
     }
 
 }
 
 /* responsive screen 425 width */
-@media screen and (min-width : 400px && max-width: 425px){
+@media screen (max-width: 425px){
     .barnav{
-        display: grid !important;
-        height: 80vh;
-        grid-template-columns: 425px;
-        grid-template-rows: 150px 150px 150px; 
-        justify-content: center;
-        width: 100%;
-        list-style-type:none;
+        display:flex;
+        align-items: initial;
+        justify-content: baseline;
+       
     }
     .btn-home{
         margin-top: 5px;
-        background-image: url(../images/425.png);
-        background-repeat: no-repeat;
-        height: 150px;
+        background-image: url(../images/320.png);
         border-radius: 5px;
-        margin-left: -35px;
+        margin-left: 8px;
     }
-    .dropup{
-        margin-left: 15px;
-        padding: 5px;
+    .top{
+        width:100%;
     }
 
 }
 
 /* responsive screen 380 width */
-@media screen and(min-width:380){
+@media screen and(min-width:380px){
     .btn-home{
         margin-top: 5em;
+    }
+    .top{
+        width:100%;
     }
 } 
 
 /* responsive screen 375 width */
 @media screen and (max-width: 375px){
     .barnav{
-        display: grid !important;
-        height: 80vh;
-        grid-template-columns: 360px;
-        grid-template-rows: 150px 150px 150px; 
-        justify-content: center;
-        width: 100%;
-        list-style-type:none;
-    }
-    .btnperso{
-        margin-top:5vh;
+        display:flex;
+        align-items: initial;
+        justify-content: baseline;
+        flex-direction:column;
+        height:100%;
+        padding: 10px;
+        
     }
     .btn-home{
         margin-top: 5px;
-        background-image: url(../images/375.png);
-        background-repeat: no-repeat;
-        height: 150px;
+        background-image: url(../images/320.png);
         border-radius: 5px;
-        margin-left: -35px;
+        margin-left: 8px;
+    }
+    .top{
+        width:100%;
     }
 
 }
 
-@media screen and (max-width: 369px){
+@media screen and (max-width: 360px){
     .barnav{
-        display: grid !important;
-        height: 80vh;
-        grid-template-columns: 369px;
-        grid-template-rows: 150px 150px 150px; 
-        justify-content: center;
-        justify-items: stretch;
-        width: 100%;
-        list-style-type:none;
-    }
-    .btnperso{
-        margin-top:5vh;
+        display:flex;
+        align-items: initial;
+        justify-content: baseline;
+        flex-direction:column;
+        
     }
     .btn-home{
-        border-radius: 5px;
-        margin-left: 2px;
+        margin-top: 5px;
         background-image: url(../images/320.png);
+        border-radius: 5px;
+        margin-left: 8px;
+    }
+    .top{
+        width:100%;
     }
 
 }
@@ -279,17 +254,21 @@ height: 20vh;
 /* responsive screen 320 width */
 @media screen and (max-width: 320px){
     .barnav{
-        display:flex;
-        align-items: initial;
-        justify-content: baseline;
-        width:320px;
+        flex-direction:column;
+       
     }
     .btn-home{
         margin-top: 5px;
         background-image: url(../images/320.png);
-        height: 150px;
         border-radius: 5px;
-        margin-left: 22px;
+        margin-left: 0px;
+    }
+    .top{
+        width:100%;
+    }
+    .dropdown-menu{
+        width: 300px;
+        border: solid 2px orangered;
     }
 
 
