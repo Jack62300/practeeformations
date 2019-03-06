@@ -14,52 +14,58 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="container-fluid">
-    <header class="top">
-        <img class="logo" alt="logo practee formations" src="images/logo.png">
-    </header>
-    <hr class="barsection">
-    
-    <section class="barnav">
-        <div class="dropdown3">
-                <div class="btn-group btnperso">
-                    <button type="button" class="btn btn-home dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       
-                    </button>
-                    <div class="dropdown-menu">
-                            <a class="dropdown-item item-green" href="#">Opérateur</a>
-                            <a class="dropdown-item item-orange" href="#">Encadrement</a>
-                            <a class="dropdown-item item-yellow" href="#">Maitrise D'oeuvre</a>
-                    </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                  </ul>
+                 
                 </div>
-            </div>
-                <div class="dropdown2">
-                <div class="btn-group btnperso">
-                        <button type="button" class="btn btn-home2 dropdown-toggle" data-toggle="dropdown2" aria-haspopup="true" aria-expanded="false">
-                          
-                        </button>
-                        <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Opérateur</a>
-                                <a class="dropdown-item" href="#">Encadrement</a>
-                                <a class="dropdown-item" href="#">Maitrise D'oeuvre</a>
+              </nav>
+              <hr class="bordernav">
+              <div class="navbar-perso col-lg-12">
+                <div class="card card1 col-md-4" style="width: 18rem;">
+                    
+                        <div class="card-body card-body1">
+                                <div class="btn-group dropup">
+                                        <button type="button" class="btn btnperso1 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Nos Formations
+                                        </button>
+                                        <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Opérateur</a>
+                                                <a class="dropdown-item" href="#">Encadrement</a>
+                                                <a class="dropdown-item" href="#">Maitrise D'oeuvre</a>
+                                              </div>
+                                      </div>
+                           
                         </div>
                 </div>
-            </div>
-                <div class="dropdown3">
-                <div class="btn-group btnperso">
-                            <button type="button" class="btn btn-home3 dropdown-toggle" data-toggle="dropdown3" aria-haspopup="true" aria-expanded="false">
-                              
-                            </button>
-                            <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Opérateur</a>
-                                    <a class="dropdown-item" href="#">Encadrement</a>
-                                    <a class="dropdown-item" href="#">Maitrise D'oeuvre</a>
+                <div class="card card2 col-md-4" style="width: 18rem;">
+                       
+                            <div class="card-body card-body2">
+                                    <div class="btn-group dropup">
+                                            <button type="button" class="btn btnperso2 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Nos Ressources
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Notre Forum</a>
+                                                    <a class="dropdown-item" href="#">Nos Vidéos</a>
+                                                  </div>
+                                          </div>
+                                
                             </div>
                 </div>
-            </div>
-        
-        
-        </section>
-    </div>
+                <div class="card card3  col-md-4" style="width: 18rem;">
+                            
+                                <div class="card-body">
+                                   
+                                    <a href="#" class="btn btn-danger btnperso3">Mon Espace</a>
+                                </div>
+                </div>
+              </div>
 </body>
 </html>
