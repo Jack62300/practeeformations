@@ -5,11 +5,16 @@
 
 4 - responsive
 */
+
 body{
     background-color:#fff;
     color: black; 
     margin:0;
     overflow-x: hidden;
+}
+.container-fluid{
+    padding-right: 0;
+    padding-left:0;
 }
 /* HEADER */
 .top{
@@ -18,6 +23,7 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
+    width:100%;
 }
 .logo{
     max-width: 100px;
@@ -63,15 +69,14 @@ height: 20vh;
     list-style-type: none;
 }
 .barnav{
-    display: grid !important;
-    grid-template-columns: 540px 540px 540px;
-    grid-template-rows: 150px; 
-    grid-column-gap: 10px;
-    grid-row-gap: 15px;
-    justify-items: stretch;
-    justify-content: center;
+    display: flex !important;
+    /* grid-template-columns: 540px 540px 540px;
+    grid-template-rows: 150px;  */
+    /* grid-column-gap: 10px;
+    grid-row-gap: 15px; */
+    flex-direction: row;
     align-items: center;
-    align-content: center;
+    justify-content: center;
     }
 .dropdown-menu{
     width: 400px;
@@ -96,9 +101,7 @@ height: 20vh;
 }
 
 /* Fin de bar nav */
-
-/* Responsive */
- @media screen and (max-width: 1440px){
+@media screen and (max-width: 1440px){
     .barnav{
         display: grid !important;
         height: 80vh;
@@ -219,6 +222,13 @@ height: 20vh;
 
 }
 
+/* responsive screen 380 width */
+@media screen and(min-width:380){
+    .btn-home{
+        margin-top: 5em;
+    }
+} 
+
 /* responsive screen 375 width */
 @media screen and (max-width: 375px){
     .barnav{
@@ -269,21 +279,23 @@ height: 20vh;
 /* responsive screen 320 width */
 @media screen and (max-width: 320px){
     .barnav{
-        display: grid !important;
-        height: 90vh;
-        grid-template-columns: 320px;
-        grid-template-rows: 150px 150px 150px; 
-        justify-content: center;
-        list-style-type:none;
+        display:flex;
+        align-items: initial;
+        justify-content: baseline;
+        width:320px;
     }
     .btn-home{
         margin-top: 5px;
         background-image: url(../images/320.png);
         height: 150px;
         border-radius: 5px;
+        margin-left: 22px;
     }
 
+
 }
+
+
 
 
 
