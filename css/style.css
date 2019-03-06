@@ -139,50 +139,58 @@ background-color: #333 !important;
     margin-top:3px;
     color: white;
 }
-
-.container-all{
-    background-color: white;
-    color: black;
-    height: 50px;
-    border-top:solid 1px black;
+.bg-secondary{
+    background-color:white !important;
+    border-top: solid 1px black;
     border-bottom: solid 1px black;
-    overflow:hidden;
 }
-.container-animate {
-	display: block;
-	padding: 0;
-	overflow: hidden;
-	position: relative;
-	/*	table-layout: fixed;*/
-	width: 100%;
-    height: 60px;
+.bg-info{
+    background-color: orangered !important;
+    width: 250px;
 }
-.message {
-	display: block;
-    margin-left: -10%;
-    margin-top:10px;
-	padding: 0 1px;
-	font-size:1em;
-	text-align: center;
-    animation: defilement 20s infinite linear;
-    height: 30px;
-    overflow:hidden;
-}
-.message:after {
-    content: attr(data-text);
+/* Texte défilant */
+.messagedefilant {
+    display: block;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 0.1%;
+    margin-top:7px;
+    position: relative;
+    width: 100%;
+    height: 50px;
+  }
+   
+  .messagedefilant div {
     position: absolute;
-    left:100%;              /* placement à droite toute */
+    min-width: 100%; /* au minimum la largeur du conteneur */
+  }
+   
+  .messagedefilant div span {
+    position: relative;
+    top:0; left:0;
+    display: inline-block;
     white-space: nowrap;
-    /*padding-left: 10px    /* OUT pas nécessaire ou mettre même valeur que conteneur */
-}
- @keyframes defilement {
- 0%, 100% {
-margin-left:0;
-}
- 99.99% {
-margin-left:-100%;
-}
-}
+    font-size: 2rem;
+  }
+   
+  .messagedefilant div span:first-child {
+    animation: defilement 20s infinite linear;
+  }
+   
+  .messagedefilant div span:last-child {
+    position: absolute;
+    animation: defilement2 20s infinite linear;
+  }
+   
+  @keyframes defilement {
+    0% { margin-left: 0; }
+    100% { margin-left: -100%; }
+  }
+   
+  @keyframes defilement2 {
+    0% { margin-left: 100%; }
+    100% { margin-left: 0%; }
+  }
 @media (min-width:200px) and (max-width:1024px){
     .navbar-perso{
         flex-direction:column;
