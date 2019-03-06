@@ -191,6 +191,11 @@ margin-left:-100%;
     .card-body{
         width:auto;
     }
+    .nformations h5{
+        margin-top:3px;
+        color: white;
+        font-size:1em;
+    }
 }
 @media (min-width:1700px){
     .card-body{
