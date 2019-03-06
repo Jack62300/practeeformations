@@ -121,7 +121,7 @@ background-color: #333 !important;
     background-color:#F0BB08;
     color:black;
 }
-@media (min-width:200px) and (max-width:768px){
+@media (min-width:200px) and (max-width:1024px){
     .navbar-perso{
         flex-direction:column;
 
