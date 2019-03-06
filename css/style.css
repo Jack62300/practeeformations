@@ -259,6 +259,7 @@ height: 20vh;
        
     }
     .btn-home{
+        position:relative;
         margin-top: 5px;
         background-image: url(../images/320.png);
         
@@ -269,6 +270,7 @@ height: 20vh;
         width:100%;
     }
     .dropdown-menu{
+        position:absolute;
         width: 300px;
         border: solid 2px orangered;
     }
