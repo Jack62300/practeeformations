@@ -1,0 +1,193 @@
+/* Responsive */
+/* @media screen and (max-width: 1440px){
+    .barnav{
+        display: grid !important;
+        height: 80vh;
+        grid-template-columns: 480px 480px 480px;
+        grid-template-rows: 150px; 
+        justify-content: center;
+        width: 100%;
+        list-style-type:none;
+    }
+    .btnperso{
+        margin-top: -83vw;
+    }
+    
+    .btn-home{
+        background-image: url(../images/btn01.png);
+        height: 150px;
+        border-radius: 5px;
+        margin-left: -35px;
+    }
+
+} 
+@media screen and (max-width: 1800px){
+    .barnav{
+        display: grid !important;
+        height: 80vh;
+        grid-template-columns: 550px;
+        grid-template-rows: 150px 150px 150px;
+        grid-column-gap: 10px;
+        grid-row-gap: 15px; 
+        justify-content: center;
+        width: 100%;
+        list-style-type:none;
+    }
+    .btnperso{
+        margin-top: 3vw;
+    }
+    .btn-home{
+        background-image: url(../images/btn01.png);
+        background-repeat: no-repeat;
+        height: 150px;
+        border-radius: 5px;
+        margin-left: 35px;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    .barnav{
+        display: grid !important;
+        height: 80vh;
+        grid-template-columns: 550px;
+        grid-template-rows: 150px 150px 150px; 
+        justify-content: center;
+        width: 100%;
+        list-style-type:none;
+    }
+    .btnperso{
+        margin-top: -550px;
+    }
+    .btn-home{
+        background-image: url(../images/btn01.png);
+        background-repeat: no-repeat;
+        height: 150px;
+        border-radius: 5px;
+        margin-left: -35px;
+    }
+
+}
+
+
+/* responsive screen 768 width */
+@media screen and (max-width: 768px){
+    .barnav{
+        display: grid !important;
+        height: 80vh;
+        grid-template-columns: 550px;
+        grid-template-rows: 150px 150px 150px; 
+        justify-content: center;
+        width: 100%;
+        list-style-type:none;
+    }
+    .btnperso{
+        margin-top: -590px;
+    }
+    .btn-home{
+        background-image: url(../images/btn01.png);
+        background-repeat: no-repeat;
+        height: 150px;
+        border-radius: 5px;
+        margin-left: -35px;
+    }
+
+}
+
+/* responsive screen 425 width */
+@media screen and (min-width : 400px && max-width: 425px){
+    .barnav{
+        display: grid !important;
+        height: 80vh;
+        grid-template-columns: 425px;
+        grid-template-rows: 150px 150px 150px; 
+        justify-content: center;
+        width: 100%;
+        list-style-type:none;
+    }
+    .btn-home{
+        margin-top: 5px;
+        background-image: url(../images/425.png);
+        background-repeat: no-repeat;
+        height: 150px;
+        border-radius: 5px;
+        margin-left: -35px;
+    }
+    .dropup{
+        margin-left: 15px;
+        padding: 5px;
+    }
+
+}
+
+/* responsive screen 375 width */
+@media screen and (max-width: 375px){
+    .barnav{
+        display: grid !important;
+        height: 80vh;
+        grid-template-columns: 360px;
+        grid-template-rows: 150px 150px 150px; 
+        justify-content: center;
+        width: 100%;
+        list-style-type:none;
+    }
+    .btnperso{
+        margin-top:5vh;
+    }
+    .btn-home{
+        margin-top: 5px;
+        background-image: url(../images/375.png);
+        background-repeat: no-repeat;
+        height: 150px;
+        border-radius: 5px;
+        margin-left: -35px;
+    }
+
+}
+
+@media screen and (max-width: 369px){
+    .barnav{
+        display: grid !important;
+        height: 80vh;
+        grid-template-columns: 369px;
+        grid-template-rows: 150px 150px 150px; 
+        justify-content: center;
+        justify-items: stretch;
+        width: 100%;
+        list-style-type:none;
+    }
+    .btnperso{
+        margin-top:5vh;
+    }
+    .btn-home{
+        border-radius: 5px;
+        margin-left: 2px;
+        background-image: url(../images/320.png);
+    }
+
+}
+
+/* responsive screen 320 width */
+@media screen and (max-width: 320px){
+    .barnav{
+        display: grid !important;
+        height: 90vh;
+        grid-template-columns: 320px;
+        grid-template-rows: 150px 150px 150px; 
+        justify-content: center;
+        list-style-type:none;
+    }
+    .btn-home{
+        margin-top: 5px;
+        background-image: url(../images/320.png);
+        height: 150px;
+        border-radius: 5px;
+    }
+
+
+}
+@media screen and(min-width:380){
+    .btn-home{
+        margin-top: 5em;
+    }
+} */

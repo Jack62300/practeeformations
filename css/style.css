@@ -87,7 +87,7 @@ background-color: #333 !important;
     background-repeat: no-repeat;
 }
 .btnperso1{
-    background-color:#F0BB08;
+    background-color:#f47721;
     color:black;
     border-radius:0;
     border:0;
@@ -105,7 +105,7 @@ background-color: #333 !important;
     width: 100%;
 }
 .btnperso3{
-    background-color:#639143;
+    background-color:#ffcb08;
     color:black;
     border-radius:0;
     border:0;
@@ -114,12 +114,74 @@ background-color: #333 !important;
     width: 100%;
 }
 .btnperso1:hover{
-    background-color:#639143;
+    background-color:#ffcb08;
     color:black;
 }
 .btnperso2:hover{
-    background-color:#F0BB08;
+    background-color:#f47721;
     color:black;
+}
+.btnperso3:hover{
+    background-color: #639143;
+    color:black;
+}
+/* Fin bar perso */ 
+
+/* Menu animation nos formations */ 
+.nformations{
+    background-color: orangered;
+    color: black;
+    width: 500px;
+    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+    text-align:center;
+}
+.nformations h5{
+    margin-top:3px;
+    color: white;
+}
+
+.container-all{
+    background-color: white;
+    color: black;
+    height: 50px;
+    border-top:solid 1px black;
+    border-bottom: solid 1px black;
+    overflow:hidden;
+}
+.container-animate {
+	display: block;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	/*	table-layout: fixed;*/
+	width: 100%;
+    height: 60px;
+}
+.message {
+	display: block;
+    margin-left: -10%;
+    margin-top:10px;
+	padding: 0 1px;
+	font-size:1em;
+	text-align: center;
+    animation: defilement 20s infinite linear;
+    height: 30px;
+    overflow:hidden;
+}
+.message:after {
+    content: attr(data-text);
+    position: absolute;
+    left:100%;              /* placement à droite toute */
+    white-space: nowrap;
+    /*padding-left: 10px    /* OUT pas nécessaire ou mettre même valeur que conteneur */
+}
+ @keyframes defilement {
+ 0%, 100% {
+margin-left:0;
+}
+ 99.99% {
+margin-left:-100%;
+}
 }
 @media (min-width:200px) and (max-width:1024px){
     .navbar-perso{
@@ -135,6 +197,7 @@ background-color: #333 !important;
         width: 550px;
     }
 }
+
 
 
 
