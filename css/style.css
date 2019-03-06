@@ -64,6 +64,7 @@ height: 20vh;
 
     margin-left: 25px;
     background-image: url(../images/btn01.png);
+    background-repeat: no-repeat !important;
     height: 150px;
     border-radius: 5px;
     list-style-type: none;
@@ -260,6 +261,7 @@ height: 20vh;
     .btn-home{
         margin-top: 5px;
         background-image: url(../images/320.png);
+        
         border-radius: 5px;
         margin-left: 0px;
     }
