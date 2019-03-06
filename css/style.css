@@ -266,6 +266,22 @@ height: 20vh;
         border-radius: 5px;
         margin-left: 0px;
     }
+    .btn-home2{
+        position:relative;
+        margin-top: 5px;
+        background-image: url(../images/320.png);
+        
+        border-radius: 5px;
+        margin-left: 0px;
+    }
+    .btn-home3{
+        position:relative;
+        margin-top: 5px;
+        background-image: url(../images/320.png);
+        
+        border-radius: 5px;
+        margin-left: 0px;
+    }
     .top{
         width:100%;
     }
