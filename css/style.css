@@ -1,11 +1,11 @@
 /* Legende du style
 1 - HEADER
-2 - Bar Navigation top
-
-
+2 - Bar Navigation 
+3 - Formation defil
+4 - Article
 4 - responsive
 */
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 body{
     background-color:#fff;
     color: black; 
@@ -149,53 +149,152 @@ background-color: #333 !important;
     width: 250px;
 }
 /* Texte défilant */
-.messagedefilant {
-    display: block;
-    padding: 0;
-    overflow: hidden;
-    margin-left: 0.1%;
-    margin-top:7px;
-    position: relative;
+
+  #cadrpg { 
+      width:100%; 
+      margin:0 auto; 
+      border:0; 
+      overflow:hidden;
+    } 
+#newshr { 
+    position:relative; 
+    width: 100%; 
+    height:60px; 
+    overflow:hidden;  
+    color:inherit;  
+    border:1px inset white;
+    border-bottom: solid 5px orangered;
+ } 
+#defile { 
+    position:absolute; 
+    margin-top:-45px; 
+    z-index:2;
+    font-size: 1.5em;
+}
+.defileorange{
+    z-index:3;
+    position:relative; 
+    height: 60px;
+    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+
+}
+.defileorange span{
+    color: white;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;   
+}
+.title{
+    margin-top: 5px;
+}
+.badge-info{
+    background-color: orangered !important;
+}
+/* Fin menu defilement */ 
+
+/* Article */
+.article{
+    display: flex;
+    background-color: rgba(80, 143, 83);
+    padding:5px;
+}
+.article .card{
+    background-color:rgba(80, 143, 83) !important;
+}
+.article .card-title{
+    border:solid 1px black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    display: flex;
+    font-size:1.5em;
+}
+.article .dateactu{
+    align-items: flex-end;
+    font-size: 0.5em !important;
+    height: 20px;
+    margin-top: 10px; 
+    margin-left: 170px;
+
+}
+.article .card-img-top{
+    margin:0;
+    border-radius: 0;
+    margin-top: -12px;
+}
+.article .card-article{
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+    background-color:none !important;
+}
+.article .card-body{
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: solid 1px black;
+    background-color: white;
+    padding: 5px;
+    text-align:center;
+}
+.article button{
+    text-align:none;
+    margin-left: 400px;
+}
+.vs{
+    background-color:orangered;
+    color : white;
+    border: none;
+}
+.btn-primary:hover{
+    background-color:#ffc107 !important;
+    color: black !important;
+}
+/* Fin Article */ 
+/* Footer */
+.footer{
+    left: 0;
+    bottom: 0;
     width: 100%;
-    height: 50px;
-  }
-   
-  .messagedefilant div {
-    position: absolute;
-    min-width: 100%; /* au minimum la largeur du conteneur */
-  }
-   
-  .messagedefilant div span {
-    position: relative;
-    top:0; left:0;
-    display: inline-block;
-    white-space: nowrap;
-    font-size: 2rem;
-  }
-   
-  .messagedefilant div span:first-child {
-    animation: defilement 20s infinite linear;
-  }
-   
-  .messagedefilant div span:last-child {
-    position: absolute;
-    animation: defilement2 20s infinite linear;
-  }
-   
-  @keyframes defilement {
-    0% { margin-left: 0; }
-    100% { margin-left: -100%; }
-  }
-   
-  @keyframes defilement2 {
-    0% { margin-left: 100%; }
-    100% { margin-left: 0%; }
-  }
-@media (min-width:200px) and (max-width:1024px){
+    background-color:#333;
+    color: white;
+    text-align: center;
+    height: 80px;
+    position:fixed;
+}
+.btn-newsletter{
+    position:fixed;
+    bottom:0;
+    right:0;
+    max-width: 330px;
+    height: 55px;
+}
+.btn-newsletter input{
+    height:55px;
+}
+.btn-news-perso{
+    background-color:orangered;
+    color:white;
+}
+.copryright{
+    position:fixed;
+    bottom: 2vh;
+    left:0;
+}
+/* Fin du Footer */
+
+@media (min-width:200px) and (max-width:1023px){
     .navbar-perso{
         flex-direction:column;
-
-    }   
+    } 
+    .article{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+    .article .col-lg-4{
+        width: 100%;
+    } 
     .card-body{
         width:auto;
     }
@@ -211,6 +310,20 @@ background-color: #333 !important;
         clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
         text-align:center;
     }
+    .footer{
+        flex-direction:column;
+        height: 130px;
+    }
+    .copryright
+    {
+        bottom: 4.5vh;
+    }
+}
+@media screen and(min-width:1024px){
+    .article{
+        align-items: center;
+        justify-content: center;
+    } 
 }
 @media (min-width:1700px){
     .card-body{
