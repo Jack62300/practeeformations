@@ -11,6 +11,9 @@ body{
     color: black; 
     margin:0;
     overflow-x: hidden;
+    display:flex;
+    flex-direction:column;
+    min-height: 100vh;
 }
 .container-fluid{
     padding-right: 0;
@@ -50,6 +53,7 @@ background-color: #333 !important;
     align-items: center;
     justify-content: center;
     margin-top: 0.5px;
+    margin-left: 1.6%;
 }
 .card{
    border:none; 
@@ -194,26 +198,26 @@ background-color: #333 !important;
 /* Article */
 .article{
     display: flex;
-    background-color: rgba(80, 143, 83);
+    background-color: rgba(80, 143, 83,0.2);
     padding:5px;
 }
 .article .card{
-    background-color:rgba(80, 143, 83) !important;
+    background:none !important;
 }
 .article .card-title{
-    border:solid 1px black;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+
     padding: 10px;
     display: flex;
-    font-size:1.5em;
+    font-size:1em;
+    background-color:#dcdcdc;
+    border-bottom: 10px rgba(80, 143, 83,0.8) solid;
 }
 .article .dateactu{
     align-items: flex-end;
     font-size: 0.5em !important;
     height: 20px;
-    margin-top: 10px; 
-    margin-left: 170px;
+    margin-top: 6px; 
+    margin-left: 346px;
 
 }
 .article .card-img-top{
@@ -228,14 +232,11 @@ background-color: #333 !important;
     background-color:none !important;
 }
 .article .card-body{
-    border-top-right-radius:10px;
-    border-top-left-radius:10px;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: solid 1px black;
-    background-color: white;
-    padding: 5px;
-    text-align:center;
+
+    border-bottom: solid 10px #333;
+    background-color: #dcdcdc;
+    text-align:left;
+    color: #333 !important;
 }
 .article button{
     text-align:none;
@@ -250,24 +251,24 @@ background-color: #333 !important;
     background-color:#ffc107 !important;
     color: black !important;
 }
+.card-text{
+    padding: 15px;
+}
 /* Fin Article */ 
 /* Footer */
 .footer{
-    left: 0;
-    bottom: 0;
     width: 100%;
     background-color:#333;
     color: white;
     text-align: center;
     height: 80px;
-    position:fixed;
+    position:sticky;
 }
 .btn-newsletter{
-    position:fixed;
-    bottom:0;
-    right:0;
     max-width: 330px;
     height: 55px;
+    margin-top:-20px;
+    margin-left:80%;
 }
 .btn-newsletter input{
     height:55px;
@@ -277,9 +278,7 @@ background-color: #333 !important;
     color:white;
 }
 .copryright{
-    position:fixed;
-    bottom: 2vh;
-    left:0;
+margin-top:50px;
 }
 /* Fin du Footer */
 
@@ -328,6 +327,14 @@ background-color: #333 !important;
 @media (min-width:1700px){
     .card-body{
         width: 550px;
+    }
+}
+@media (min-width:1000px) and (max-width:1500px){
+    .article .card-title{
+        margin-left: 4em;
+    }
+    .article .dateactu{
+        margin-left: -5px;
     }
 }
 
