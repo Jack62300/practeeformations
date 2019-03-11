@@ -202,7 +202,6 @@ background-color: #333 !important;
 .article{
     display: flex;
     background-color: rgba(80, 143, 83,0.2);
-    padding:5px;
 }
 .article .card{
     background:none !important;
@@ -215,14 +214,14 @@ background-color: #333 !important;
     background-color:#dcdcdc;
     border-bottom: 10px rgba(80, 143, 83,0.8) solid;
 }
-.article .dateactu{
+/* .article .dateactu{
     align-items: flex-end;
     font-size: 0.5em !important;
     height: 20px;
     margin-top: 6px; 
     margin-left: 346px;
 
-}
+} */
 .article .card-img-top{
     margin:0;
     border-radius: 0;
@@ -292,10 +291,11 @@ margin-top:50px;
 @media (min-width:1000px) and (max-width:1500px){
     .article .card-title{
         margin-left: 4em;
+        flex-direction:column;
     }
-    .article .dateactu{
+    /* .article .dateactu{
         margin-left: -5px;
-    }
+    } */
     .article .card-text{
         text-align:left;
         font-size:12px;
@@ -331,6 +331,11 @@ margin-top:50px;
     } 
     .card-body{
         width:auto;
+        text-align:left;
+    }
+    .article .card-text{
+        padding: 125px;
+        margin:0 auto;
     }
     .nformations h5{
         margin-top:3px;
@@ -352,6 +357,38 @@ margin-top:50px;
     {
         bottom: 4.5vh;
     }
+    .btn-newsletter{
+        max-width: 330px;
+        height: 55px;
+        margin-top:-8px;
+        margin-left:4%;
+    }
+    .btn-news-perso{
+        width: 100px;
+    }
+}
+@media (min-width:150px) and (max-width:500px){
+    .article .card-title{
+        height:100%;
+    }
+    .article .card-title .flex-row{
+        flex-direction: column !important;
+        margin-left: 35px;
+    }
+    .article .card-text{
+        padding: 100px;
+    }
+    .vs{
+        width:150px;
+        height: 30px;
+        margin-left: 200px !important;
+        margin-top: -20px;
+    }
+   .article .card-img-top{
+       max-width: 80%;
+       margin-left:60px;
+   }
+    
 }
 
 
