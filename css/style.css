@@ -15,6 +15,9 @@ body{
     flex-direction:column;
     min-height: 100vh;
 }
+html{
+    margin:0;
+}
 .container-fluid{
     padding-right: 0;
     padding-left:0;
@@ -281,7 +284,39 @@ background-color: #333 !important;
 margin-top:50px;
 }
 /* Fin du Footer */
-
+@media (min-width:1700px){
+    .card-body{
+        width: 550px;
+    }
+}
+@media (min-width:1000px) and (max-width:1500px){
+    .article .card-title{
+        margin-left: 4em;
+    }
+    .article .dateactu{
+        margin-left: -5px;
+    }
+    .article .card-text{
+        text-align:left;
+        font-size:12px;
+        margin:10px;
+        word-wrap: break-word;
+    }
+    .article .card-body{
+        padding:10px;
+        margin:10px;
+    }
+    .vs{
+        margin-left: -5px !important;
+    }
+}
+@media screen and(min-width:1024px){
+    .article{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    } 
+}
 @media (min-width:200px) and (max-width:1023px){
     .navbar-perso{
         flex-direction:column;
@@ -318,25 +353,10 @@ margin-top:50px;
         bottom: 4.5vh;
     }
 }
-@media screen and(min-width:1024px){
-    .article{
-        align-items: center;
-        justify-content: center;
-    } 
-}
-@media (min-width:1700px){
-    .card-body{
-        width: 550px;
-    }
-}
-@media (min-width:1000px) and (max-width:1500px){
-    .article .card-title{
-        margin-left: 4em;
-    }
-    .article .dateactu{
-        margin-left: -5px;
-    }
-}
+
+
+
+
 
 
 
